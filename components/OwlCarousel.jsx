@@ -167,7 +167,9 @@ class OwlCarousel extends React.Component {
 	}
 
 	destroy() {
-		this.$car.destroy();
+		if (this.$car) {
+			this.$car.destroy();
+		}
 	}
 
 	getOptions() {
